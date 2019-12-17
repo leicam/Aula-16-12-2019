@@ -31,7 +31,7 @@ namespace Aries.Aplicacao.Servicos
             }
             catch(ArgumentException ex)
             {
-                return ex.Message;
+                throw new ArgumentException(ex.Message);
             }
         }
 
